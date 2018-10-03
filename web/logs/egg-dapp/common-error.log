@@ -1,0 +1,213 @@
+2018-10-04 01:31:23,352 ERROR 4028 nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUsers (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/app/service/user.js:5:29)
+    at UserController.add (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/app/controller/user.js:8:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:31:22','2018-10-03 17:31:22');"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:31:22','2018-10-03 17:31:22');"}
+sql: "INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:31:22','2018-10-03 17:31:22');"
+pid: 4028
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-04 01:31:34,018 ERROR 4028 nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUsers (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/app/service/user.js:5:29)
+    at UserController.add (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/app/controller/user.js:8:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:31:33','2018-10-03 17:31:33');"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:31:33','2018-10-03 17:31:33');"}
+sql: "INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:31:33','2018-10-03 17:31:33');"
+pid: 4028
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-04 01:32:13,064 ERROR 4077 nodejs.SequelizeDatabaseError: Unknown column 'created_at' in 'field list'
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUsers (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/app/service/user.js:5:29)
+    at UserController.add (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/app/controller/user.js:8:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:32:12','2018-10-03 17:32:12');"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'created_at' in 'field list'","sql":"INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:32:12','2018-10-03 17:32:12');"}
+sql: "INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:32:12','2018-10-03 17:32:12');"
+pid: 4077
+hostname: renkunpengdeMacBook-Pro.local
+

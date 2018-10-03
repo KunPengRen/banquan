@@ -1,0 +1,16 @@
+2018-10-04 00:07:38,362 INFO 2797 [egg-sequelize](120ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:28:11,499 INFO 3975 [egg-sequelize](84ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:28:18,721 INFO 3991 [egg-sequelize](91ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:30:02,451 INFO 4028 [egg-sequelize](93ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:31:23,344 INFO 4028 [egg-sequelize](88ms) Executed (default): INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:31:22','2018-10-03 17:31:22');
+2018-10-04 01:31:34,014 INFO 4028 [egg-sequelize](113ms) Executed (default): INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:31:33','2018-10-03 17:31:33');
+2018-10-04 01:32:03,527 INFO 4077 [egg-sequelize](59ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:32:13,057 INFO 4077 [egg-sequelize](70ms) Executed (default): INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:32:12','2018-10-03 17:32:12');
+2018-10-04 01:33:05,490 INFO 4089 [egg-sequelize](88ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:33:45,492 INFO 4117 [egg-sequelize](67ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:34:02,214 INFO 4135 [egg-sequelize](82ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:34:08,257 INFO 4135 [egg-sequelize](55ms) Executed (default): INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello','2018-10-03 17:34:08','2018-10-03 17:34:08');
+2018-10-04 01:34:38,583 INFO 4135 [egg-sequelize](113ms) Executed (default): INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello1','2018-10-03 17:34:38','2018-10-03 17:34:38');
+2018-10-04 01:35:56,001 INFO 4180 [egg-sequelize](74ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:36:58,980 INFO 4190 [egg-sequelize](89ms) Executed (default): SELECT 1+1 AS result
+2018-10-04 01:37:21,457 INFO 4190 [egg-sequelize](80ms) Executed (default): INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAULT,'hello3','2018-10-03 17:37:21','2018-10-03 17:37:21');
