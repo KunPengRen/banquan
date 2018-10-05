@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "egg-bin dev",
-    "start": "egg-scripts start --daemon",
+    "start": "egg-scripts start --daemon --port=8080",
     "stop": "egg-scripts stop"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "egg": "^2.10.0",
-    "mysql2": "^1.6.1",
-    "egg-sequelize": "^4.1.0"
+    "egg-scripts": "^2.9.1",
+    "egg-sequelize": "^4.1.0",
+    "mysql2": "^1.6.1"
   },
   "devDependencies": {
     "egg-bin": "^4.8.3"

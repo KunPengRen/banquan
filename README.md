@@ -16,7 +16,7 @@
 
 ```json
 reques header
-http://127.0.0.1:7001/api/v1/dev/ishave/:address
+http://39.106.169.68:8080/api/v1/dev/ishave/:address
 method：Get
 
 response
@@ -35,7 +35,7 @@ response
 {"res":false}
 
 示例
-http://127.0.0.1:7001/api/v1/dev/ishave/
+http://39.106.169.68:8080/api/v1/dev/ishave/
 
 {
      "address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc",
@@ -54,10 +54,10 @@ http://127.0.0.1:7001/api/v1/dev/ishave/
 
 ```json
 request header
-http://127.0.0.1:7001/api/v1/dev/adduser
+http://39.106.169.68:8080/api/v1/dev/adduser
 
 POST /api/v1/dev/adduser HTTP/1.1
-Host: 127.0.0.1:7001
+Host: 39.106.169.68:8080
 Content-Type: application/json
 
 {"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","name":"dayu","username":"renkunpeng","phone":"18810386312","mail":"xiaohuang@qq.com","identify":"411425199600000000"}
@@ -75,7 +75,7 @@ response
 ```json
 request header
 POST /api/v1/dev/uploaddoc HTTP/1.1
-Host: 127.0.0.1:7001
+Host: 39.106.169.68:8080
 Content-Type: application/json
 Cache-Control: no-cache
 Postman-Token: 0442d93b-aad7-4a3b-9eb8-bf81492d2624
@@ -93,14 +93,14 @@ response
 
 ```json
 reques header
-http://127.0.0.1:7001/api/v1/dev/mydoclist/:address
+http://39.106.169.68:8080/api/v1/dev/mydoclist/:address
 method：Get
 
 response
 mydoclist
 示例
 请求
-http://127.0.0.1:7001/api/v1/dev/mydoclist/0xa1c2ba713363d23253f46854b467dde717e6f4bc
+http://39.106.169.68:8080/api/v1/dev/mydoclist/0xa1c2ba713363d23253f46854b467dde717e6f4bc
 返回
 [{"id":1,"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","user":"dayu","docname":"weichat","time":"2018-10-11","info":"微信","hash":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","transaction":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","created_at":"2018-10-05","updated_at":"2018-10-05"},{"id":2,"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","user":"dayu","docname":"qq","time":"2018-10-11","info":"微信","hash":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","transaction":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","created_at":"2018-10-05","updated_at":"2018-10-05"},{"id":3,"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","user":"dayu","docname":"qq","time":"2018-10-11","info":"微信","hash":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","transaction":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","created_at":"2018-10-05","updated_at":"2018-10-05"}]
 ```
