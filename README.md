@@ -35,7 +35,7 @@ response
 {"res":false}
 
 示例
-http://39.106.169.68:8080/api/v1/dev/ishave/
+http://39.106.169.68:8080/api/v1/dev/ishave/0xa1c2ba713363d23253f46854b467dde717e6f4bc
 
 {
      "address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc",
