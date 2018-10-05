@@ -211,3 +211,822 @@ sql: "INSERT INTO `users` (`id`,`name`,`created_at`,`updated_at`) VALUES (DEFAUL
 pid: 4077
 hostname: renkunpengdeMacBook-Pro.local
 
+2018-10-05 09:12:52,955 ERROR 5555 [-/127.0.0.1/-/1114ms GET /ishave/111] nodejs.SequelizeDatabaseError: Unknown column 'identify' in 'field list'
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at Function.findAll (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1760:17)
+    at UserService.isHave (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:5:41)
+    at UserController.ishave (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:7:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'identify' in 'field list'","sql":"SELECT `address`, `name`, `created_at`, `updated_at`, `username`, `phone`, `mail`, `identify` FROM `users` AS `users` WHERE `users`.`address` = '111';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'identify' in 'field list'","sql":"SELECT `address`, `name`, `created_at`, `updated_at`, `username`, `phone`, `mail`, `identify` FROM `users` AS `users` WHERE `users`.`address` = '111';"}
+sql: "SELECT `address`, `name`, `created_at`, `updated_at`, `username`, `phone`, `mail`, `identify` FROM `users` AS `users` WHERE `users`.`address` = '111';"
+pid: 5555
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 09:20:54,769 ERROR 5660 [-/127.0.0.1/-/10019ms GET /ishave/111] nodejs.TimeoutError: ResourceRequest timed out
+    at ResourceRequest._fireTimeout (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+    at Timeout.bound (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+    at ontimeout (timers.js:424:11)
+    at tryOnTimeout (timers.js:288:5)
+    at listOnTimeout (timers.js:251:5)
+    at Timer.processTimers (timers.js:211:10)
+From previous event:
+    at new Deferred (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/Deferred.js:13:21)
+    at new ResourceRequest (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:23:5)
+    at Pool.acquire (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/Pool.js:448:29)
+    at promise.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:274:24)
+From previous event:
+    at ConnectionManager.getConnection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:273:20)
+    at Promise.try (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:554:34)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:64)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at Function.findAll (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1760:17)
+    at UserService.isHave (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:5:48)
+    at UserController.ishave (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:7:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "TimeoutError"
+pid: 5660
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 09:21:13,344 ERROR 5660 [-/127.0.0.1/-/10006ms GET /ishave/111] nodejs.TimeoutError: ResourceRequest timed out
+    at ResourceRequest._fireTimeout (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+    at Timeout.bound (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+    at ontimeout (timers.js:424:11)
+    at tryOnTimeout (timers.js:288:5)
+    at listOnTimeout (timers.js:251:5)
+    at Timer.processTimers (timers.js:211:10)
+From previous event:
+    at new Deferred (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/Deferred.js:13:21)
+    at new ResourceRequest (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:23:5)
+    at Pool.acquire (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/Pool.js:448:29)
+    at promise.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:274:24)
+From previous event:
+    at ConnectionManager.getConnection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:273:20)
+    at Promise.try (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:554:34)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:64)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at Function.findAll (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1760:17)
+    at UserService.isHave (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:5:48)
+    at UserController.ishave (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:7:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "TimeoutError"
+pid: 5660
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 10:26:57,416 ERROR 6072 [-/127.0.0.1/-/4ms POST /api/v1/dev/adduser] nodejs.TypeError: ctx.service.user.addUser is not a function
+    at UserController.adduser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:20:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+
+pid: 6072
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 10:27:29,394 ERROR 6100 nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:22:29)
+    at UserController.adduser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:20:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:27:29','2018-10-05 02:27:29');"}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:27:29','2018-10-05 02:27:29');"}
+sql: "INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:27:29','2018-10-05 02:27:29');"
+pid: 6100
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 10:28:42,387 ERROR 6133 nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:22:29)
+    at UserController.adduser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:20:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:28:42','2018-10-05 02:28:42');"}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:28:42','2018-10-05 02:28:42');"}
+sql: "INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:28:42','2018-10-05 02:28:42');"
+pid: 6133
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 10:29:30,683 ERROR 6155 nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:23:29)
+    at UserController.adduser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:20:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:29:30','2018-10-05 02:29:30');"}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:29:30','2018-10-05 02:29:30');"}
+sql: "INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:29:30','2018-10-05 02:29:30');"
+pid: 6155
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 10:30:15,738 ERROR 6176 nodejs.SequelizeDatabaseError: Column 'address' cannot be null
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:23:29)
+    at UserController.adduser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:20:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:30:15','2018-10-05 02:30:15');"}
+original: {"code":"ER_BAD_NULL_ERROR","errno":1048,"sqlState":"23000","sqlMessage":"Column 'address' cannot be null","sql":"INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:30:15','2018-10-05 02:30:15');"}
+sql: "INSERT INTO `users` (`address`,`created_at`,`updated_at`) VALUES (NULL,'2018-10-05 02:30:15','2018-10-05 02:30:15');"
+pid: 6176
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 10:32:05,048 ERROR 6215 nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:226:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:23:29)
+    at UserController.adduser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:20:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","origin":"DB","instance":{"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","name":"dayu","username":"renkunpeng","phone":"18810386312","mail":"xiaohuang@qq.com","identify":"411425199600000000","updated_at":"2018-10-05T02:32:03.279Z","created_at":"2018-10-05T02:32:03.279Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"0xa1c2ba713363d23253f46854b467dde717e6f4bc"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '0xa1c2ba713363d23253f46854b467dde717e6f4bc' for key 'PRIMARY'","sql":"INSERT INTO `users` (`address`,`name`,`username`,`phone`,`mail`,`identify`,`created_at`,`updated_at`) VALUES ('0xa1c2ba713363d23253f46854b467dde717e6f4bc','dayu','renkunpeng','18810386312','xiaohuang@qq.com','411425199600000000','2018-10-05 02:32:03','2018-10-05 02:32:03');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '0xa1c2ba713363d23253f46854b467dde717e6f4bc' for key 'PRIMARY'","sql":"INSERT INTO `users` (`address`,`name`,`username`,`phone`,`mail`,`identify`,`created_at`,`updated_at`) VALUES ('0xa1c2ba713363d23253f46854b467dde717e6f4bc','dayu','renkunpeng','18810386312','xiaohuang@qq.com','411425199600000000','2018-10-05 02:32:03','2018-10-05 02:32:03');"}
+sql: "INSERT INTO `users` (`address`,`name`,`username`,`phone`,`mail`,`identify`,`created_at`,`updated_at`) VALUES ('0xa1c2ba713363d23253f46854b467dde717e6f4bc','dayu','renkunpeng','18810386312','xiaohuang@qq.com','411425199600000000','2018-10-05 02:32:03','2018-10-05 02:32:03');"
+pid: 6215
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 11:03:41,864 ERROR 6694 nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:226:16)
+    at Query.handler [as onResult] (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.Command.execute (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:513:28)
+    at PacketParser.onPacket (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:81:16)
+    at PacketParser.executeStart (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/packet_parser.js:76:14)
+    at Socket.<anonymous> (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/mysql2/lib/connection.js:89:29)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+From previous event:
+    at Query.run (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:558:20)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:555:8)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.insert (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3695:53)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at model.save (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:3671:8)
+    at Function.create (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:2035:8)
+    at UserService.addUser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:23:29)
+    at UserController.adduser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:20:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"0xa1c2ba713363d23253f46854b467dde717e6f4b","origin":"DB","instance":{"address":"0xa1c2ba713363d23253f46854b467dde717e6f4b","name":"dayu","username":"renkunpeng","phone":"18810386312","mail":"xiaohuang@qq.com","identify":"411425199600000000","updated_at":"2018-10-05T03:03:40.931Z","created_at":"2018-10-05T03:03:40.931Z"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"0xa1c2ba713363d23253f46854b467dde717e6f4b"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '0xa1c2ba713363d23253f46854b467dde717e6f4b' for key 'PRIMARY'","sql":"INSERT INTO `users` (`address`,`name`,`username`,`phone`,`mail`,`identify`,`created_at`,`updated_at`) VALUES ('0xa1c2ba713363d23253f46854b467dde717e6f4b','dayu','renkunpeng','18810386312','xiaohuang@qq.com','411425199600000000','2018-10-05 03:03:40','2018-10-05 03:03:40');"}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '0xa1c2ba713363d23253f46854b467dde717e6f4b' for key 'PRIMARY'","sql":"INSERT INTO `users` (`address`,`name`,`username`,`phone`,`mail`,`identify`,`created_at`,`updated_at`) VALUES ('0xa1c2ba713363d23253f46854b467dde717e6f4b','dayu','renkunpeng','18810386312','xiaohuang@qq.com','411425199600000000','2018-10-05 03:03:40','2018-10-05 03:03:40');"}
+sql: "INSERT INTO `users` (`address`,`name`,`username`,`phone`,`mail`,`identify`,`created_at`,`updated_at`) VALUES ('0xa1c2ba713363d23253f46854b467dde717e6f4b','dayu','renkunpeng','18810386312','xiaohuang@qq.com','411425199600000000','2018-10-05 03:03:40','2018-10-05 03:03:40');"
+pid: 6694
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 11:07:04,419 ERROR 6735 [-/127.0.0.1/-/16ms POST /api/v1/dev/uploaddoc] nodejs.TypeError: ctx.service.uploadMydoc is not a function
+    at MydocController.uploaddoc (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/mydoc.js:16:43)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+
+pid: 6735
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 11:09:17,628 ERROR 6769 [-/127.0.0.1/-/2ms GET /api/v1/dev/mydoclist/0xa1c2ba713363d23253f46854b467dde717e6f4bc] nodejs.TypeError: ctx.service.mydocList is not a function
+    at MydocController.mydoclist (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/mydoc.js:22:43)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+
+pid: 6769
+hostname: renkunpengdeMacBook-Pro.local
+
+2018-10-05 11:16:17,229 ERROR 6798 [-/127.0.0.1/-/10015ms GET /api/v1/dev/ishave/0xa1c2ba713363d23253f46854b467dde717e6f4bc] nodejs.TimeoutError: ResourceRequest timed out
+    at ResourceRequest._fireTimeout (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+    at Timeout.bound (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+    at ontimeout (timers.js:424:11)
+    at tryOnTimeout (timers.js:288:5)
+    at listOnTimeout (timers.js:251:5)
+    at Timer.processTimers (timers.js:211:10)
+From previous event:
+    at new Deferred (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/Deferred.js:13:21)
+    at new ResourceRequest (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/ResourceRequest.js:23:5)
+    at Pool.acquire (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/generic-pool/lib/Pool.js:448:29)
+    at promise.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:274:24)
+From previous event:
+    at ConnectionManager.getConnection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:273:20)
+    at Promise.try (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:554:34)
+From previous event:
+    at Promise.resolve.retryParameters (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:64)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/sequelize.js:454:28)
+    at QueryInterface.select (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/query-interface.js:1104:27)
+    at Promise.try.then.then.then (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1604:34)
+    at runCallback (timers.js:693:18)
+    at tryOnImmediate (timers.js:664:5)
+    at processImmediate (timers.js:646:5)
+From previous event:
+    at Function.findAll (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1601:8)
+    at Function.findOne (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/sequelize/lib/model.js:1760:17)
+    at UserService.isHave (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/service/user.js:5:48)
+    at UserController.ishave (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/controller/user.js:7:48)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-router/lib/router.js:351:31)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at nosniff (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/nosniff.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at noopen (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/noopen.js:8:11)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at notAllow (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-security/lib/middlewares/methodnoallow.js:21:12)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-compose/index.js:42:32)
+    at bodyParser (/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/koa-bodyparser/index.js:86:11)
+name: "TimeoutError"
+pid: 6798
+hostname: renkunpengdeMacBook-Pro.local
+

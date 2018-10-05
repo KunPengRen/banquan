@@ -8,3 +8,11 @@
 2018-10-04 01:33:45,511 INFO 4116 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/egg-dapp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-10-05 00:00:01.000
 2018-10-04 01:36:58,995 INFO 4189 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-10-05 00:00:00.000
 2018-10-04 01:36:58,995 INFO 4189 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-10-05 00:00:01.000
+2018-10-05 09:11:09,277 INFO 5477 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-10-06 00:00:00.000
+2018-10-05 09:11:09,278 INFO 5477 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-10-06 00:00:01.000
+2018-10-05 09:14:55,775 INFO 5580 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-10-06 00:00:00.000
+2018-10-05 09:14:55,776 INFO 5580 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-10-06 00:00:01.000
+2018-10-05 10:26:27,383 INFO 6063 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-10-06 00:00:00.000
+2018-10-05 10:26:27,384 INFO 6063 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-10-06 00:00:01.000
+2018-10-05 11:07:00,153 INFO 6734 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-10-06 00:00:00.000
+2018-10-05 11:07:00,154 INFO 6734 [Timer] /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-10-06 00:00:01.000
