@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+    <input type="file" id="singfile"  onchange="singfile()"/>
+    <script src="js/core-min.js"></script>
+	<script src="js/md5.js"></script>
+    <script>
+        function singfile() {
+			var reader = new FileReader();
+			alert("正在计算文件MD5值，请等待计算完成弹出后，提交签名");
+			reader.addEventListener('load',function () {
+            console.log(this.result);
+			var hash = CryptoJS.MD5(CryptoJS.enc.Latin1.parse(this.result));
+			var md5 = hash.toString(CryptoJS.enc.Hex)
+			var filename = document.getElementById("singfile").value.split('/').pop().split('\\').pop();
+			file_hash = md5;
+			alert("文件的MD5值为"+file_hash+"\n现在可以点击提交数据");
+			});
+			reader.readAsBinaryString(document.getElementById("singfile").files[0]);
+        };
+       
+    </script>
+
+    
+</html>
