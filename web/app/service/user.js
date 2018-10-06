@@ -10,10 +10,10 @@ class UserService extends Service{
         console.log('hello world');
         console.log(user);
         if(user){
-            return user;
+            return {"res":true,"data":user};
         }
         else{
-            return {"res":false}
+            return {"res":false,"data":""};
         }
         
     }

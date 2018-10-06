@@ -82,3 +82,6 @@
 2018-10-05 11:24:41,076 INFO 6972 [egg-sequelize](621ms) Executed (default): SELECT 1+1 AS result
 2018-10-05 11:25:37,943 INFO 6972 [egg-sequelize](79ms) Executed (default): INSERT INTO `mydocs` (`id`,`address`,`user`,`docname`,`time`,`info`,`hash`,`transaction`,`created_at`,`updated_at`) VALUES (DEFAULT,'0xa1c2ba713363d23253f46854b467dde717e6f4bc','dayu','qq','2018-10-11 00:00:00','微信','0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc','0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc','2018-10-05 03:25:36','2018-10-05 03:25:36');
 2018-10-05 11:26:14,281 INFO 6972 [egg-sequelize](91ms) Executed (default): SELECT `id`, `address`, `user`, `docname`, `time`, `info`, `hash`, `transaction`, `created_at`, `updated_at` FROM `mydocs` AS `mydocs` WHERE `mydocs`.`address` = '0xa1c2ba713363d23253f46854b467dde717e6f4bc';
+2018-10-06 13:16:31,744 INFO 18656 [egg-sequelize](51ms) Executed (default): SELECT 1+1 AS result
+2018-10-06 13:18:02,852 INFO 18656 [egg-sequelize](82ms) Executed (default): SELECT `address`, `name`, `username`, `phone`, `mail`, `identify`, `created_at`, `updated_at` FROM `users` AS `users` WHERE `users`.`address` = '0xa1c2ba713363d23253f46854b467dde717e6f4bc';
+2018-10-06 13:18:36,821 INFO 18719 [egg-sequelize](167ms) Executed (default): SELECT 1+1 AS result

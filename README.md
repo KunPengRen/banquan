@@ -20,33 +20,12 @@ http://39.106.169.68:8080/api/v1/dev/ishave/:address
 method：Get
 
 response
-存在
-{
-     "address":"xx",
-     "name":"xx",
-     "username":"xx",
-     "phone":"xx",
-     "mail":"xx@qq.com",
-     "identify":"xx",
-     "created_at":"2018-xx-05",
-     "updated_at":"2018-xx-05"
-}
-不存在
-{"res":false}
+{"res":true,"data":""}
 
 示例
 http://39.106.169.68:8080/api/v1/dev/ishave/0xa1c2ba713363d23253f46854b467dde717e6f4bc
 
-{
-     "address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc",
-     "name":"dayu",
-     "username":"renkunpeng",
-     "phone":"18810386312",
-     "mail":"xiaohuang@qq.com",
-     "identify":"411425199600000000",
-     "created_at":"2018-10-05",
-     "updated_at":"2018-10-05"
-}
+{"res":true,"data":{"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","name":"dayu","username":"renkunpeng","phone":"18810386312","mail":"xiaohuang@qq.com","identify":"411425199600000000","created_at":"2018-10-05","updated_at":"2018-10-05"}}
 
 ```
 
@@ -105,3 +84,6 @@ http://39.106.169.68:8080/api/v1/dev/mydoclist/0xa1c2ba713363d23253f46854b467dde
 [{"id":1,"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","user":"dayu","docname":"weichat","time":"2018-10-11","info":"微信","hash":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","transaction":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","created_at":"2018-10-05","updated_at":"2018-10-05"},{"id":2,"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","user":"dayu","docname":"qq","time":"2018-10-11","info":"微信","hash":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","transaction":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","created_at":"2018-10-05","updated_at":"2018-10-05"},{"id":3,"address":"0xa1c2ba713363d23253f46854b467dde717e6f4bc","user":"dayu","docname":"qq","time":"2018-10-11","info":"微信","hash":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","transaction":"0x06d6618af81d32d10d4197b88266970e6d3bcf71b7c5ff594e575591a434f8cc","created_at":"2018-10-05","updated_at":"2018-10-05"}]
 ```
 
+### 三、智能合约
+
+合约地址：0x4D3F0D9a79ee462c29608De5A7f2692613502d70
