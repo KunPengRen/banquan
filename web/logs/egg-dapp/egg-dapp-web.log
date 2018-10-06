@@ -85,3 +85,10 @@
 2018-10-06 13:16:31,744 INFO 18656 [egg-sequelize](51ms) Executed (default): SELECT 1+1 AS result
 2018-10-06 13:18:02,852 INFO 18656 [egg-sequelize](82ms) Executed (default): SELECT `address`, `name`, `username`, `phone`, `mail`, `identify`, `created_at`, `updated_at` FROM `users` AS `users` WHERE `users`.`address` = '0xa1c2ba713363d23253f46854b467dde717e6f4bc';
 2018-10-06 13:18:36,821 INFO 18719 [egg-sequelize](167ms) Executed (default): SELECT 1+1 AS result
+2018-10-06 22:09:40,177 INFO 4642 [egg-sequelize](14ms) Executed (default): SELECT 1+1 AS result
+2018-10-06 22:10:33,793 INFO 4642 [egg-sequelize](10ms) Executed (default): SELECT `address`, `name`, `username`, `phone`, `mail`, `identify`, `created_at`, `updated_at` FROM `users` AS `users` WHERE `users`.`address` = '0xa1c2ba713363d23253f46854b467dde74bc';
+2018-10-06 22:11:00,310 INFO 4670 [egg-sequelize](11ms) Executed (default): SELECT 1+1 AS result
+2018-10-06 22:11:05,464 INFO 4678 [egg-sequelize](19ms) Executed (default): SELECT 1+1 AS result
+2018-10-06 22:11:08,480 INFO 4678 [egg-sequelize](14ms) Executed (default): SELECT `address`, `name`, `username`, `phone`, `mail`, `identify`, `created_at`, `updated_at` FROM `users` AS `users` WHERE `users`.`address` = '0xa1c2ba713363d23253f46854b467dde74bc';
+2018-10-06 22:11:57,636 INFO 4678 [egg-sequelize](17ms) Executed (default): SELECT `address`, `name`, `username`, `phone`, `mail`, `identify`, `created_at`, `updated_at` FROM `users` AS `users` WHERE `users`.`address` = '0xa1c2ba713363d23253f46854b467dde74bc';
+2018-10-06 22:11:57,672 INFO 4678 [egg-sequelize](13ms) Executed (default): UPDATE `users` SET `name`='dayu2',`updated_at`='2018-10-06 14:11:57' WHERE `address` = '0xa1c2ba713363d23253f46854b467dde74bc'

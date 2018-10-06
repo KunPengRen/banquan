@@ -762,3 +762,42 @@
 2018-10-06 13:18:34,989 INFO 18719 [egg:core] dump config after load, 5ms
 2018-10-06 13:18:35,009 INFO 18719 [egg-watcher:app] watcher start success
 2018-10-06 13:18:36,830 INFO 18719 [egg:core] dump config after ready, 5ms
+2018-10-06 22:09:39,690 INFO 4642 [egg:logger] init all loggers with options: {"dir":"/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/logs/egg-dapp","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-dapp-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-06 22:09:39,728 INFO 4642 [egg-schedule]: register schedule /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-06 22:09:39,728 INFO 4642 [egg-schedule]: register schedule /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-06 22:09:39,997 INFO 4642 [egg-static] starting static serve /public/ -> /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/public
+2018-10-06 22:09:39,999 INFO 4642 [egg-security] use methodnoallow middleware
+2018-10-06 22:09:40,000 INFO 4642 [egg-security] use noopen middleware
+2018-10-06 22:09:40,001 INFO 4642 [egg-security] use nosniff middleware
+2018-10-06 22:09:40,001 INFO 4642 [egg-security] use xssProtection middleware
+2018-10-06 22:09:40,002 INFO 4642 [egg-security] use dta middleware
+2018-10-06 22:09:40,002 INFO 4642 [egg-security] compose 5 middlewares into one security middleware
+2018-10-06 22:09:40,013 INFO 4642 [egg:core] dump config after load, 5ms
+2018-10-06 22:09:40,035 INFO 4642 [egg-watcher:app] watcher start success
+2018-10-06 22:09:40,188 INFO 4642 [egg:core] dump config after ready, 7ms
+2018-10-06 22:10:59,604 INFO 4670 [egg:logger] init all loggers with options: {"dir":"/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/logs/egg-dapp","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-dapp-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-06 22:10:59,642 INFO 4670 [egg-schedule]: register schedule /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-06 22:10:59,642 INFO 4670 [egg-schedule]: register schedule /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-06 22:10:59,925 INFO 4670 [egg-static] starting static serve /public/ -> /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/public
+2018-10-06 22:10:59,928 INFO 4670 [egg-security] use methodnoallow middleware
+2018-10-06 22:10:59,928 INFO 4670 [egg-security] use noopen middleware
+2018-10-06 22:10:59,929 INFO 4670 [egg-security] use nosniff middleware
+2018-10-06 22:10:59,929 INFO 4670 [egg-security] use xssProtection middleware
+2018-10-06 22:10:59,930 INFO 4670 [egg-security] use dta middleware
+2018-10-06 22:10:59,930 INFO 4670 [egg-security] compose 5 middlewares into one security middleware
+2018-10-06 22:10:59,940 INFO 4670 [egg:core] dump config after load, 5ms
+2018-10-06 22:10:59,959 INFO 4670 [egg-watcher:app] watcher start success
+2018-10-06 22:11:00,319 INFO 4670 [egg:core] dump config after ready, 6ms
+2018-10-06 22:11:04,892 INFO 4678 [egg:logger] init all loggers with options: {"dir":"/Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/logs/egg-dapp","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-dapp-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-06 22:11:04,951 INFO 4678 [egg-schedule]: register schedule /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-06 22:11:04,951 INFO 4678 [egg-schedule]: register schedule /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-06 22:11:05,264 INFO 4678 [egg-static] starting static serve /public/ -> /Users/renkunpeng/Documents/project/blocklain/ethereum/banquan/web/app/public
+2018-10-06 22:11:05,267 INFO 4678 [egg-security] use methodnoallow middleware
+2018-10-06 22:11:05,267 INFO 4678 [egg-security] use noopen middleware
+2018-10-06 22:11:05,268 INFO 4678 [egg-security] use nosniff middleware
+2018-10-06 22:11:05,268 INFO 4678 [egg-security] use xssProtection middleware
+2018-10-06 22:11:05,268 INFO 4678 [egg-security] use dta middleware
+2018-10-06 22:11:05,268 INFO 4678 [egg-security] compose 5 middlewares into one security middleware
+2018-10-06 22:11:05,278 INFO 4678 [egg:core] dump config after load, 5ms
+2018-10-06 22:11:05,299 INFO 4678 [egg-watcher:app] watcher start success
+2018-10-06 22:11:05,490 INFO 4678 [egg:core] dump config after ready, 18ms
