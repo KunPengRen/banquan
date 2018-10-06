@@ -21,7 +21,7 @@
 		--mydoc.js 版权存证表orm层声明
     --service 服务层目录
     	--user.js 用户信息接口操作	
-		--mydoc.js 存证信息接口操作
+        --mydoc.js 存证信息接口操作
     --router.js 接口路由信息
 --config 配置文件目录
 --package.json 包文件信息
