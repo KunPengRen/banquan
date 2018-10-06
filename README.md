@@ -18,7 +18,7 @@
         --mydoc.js 版权存证信息接口相关控制器
     --modle 数据层目录(使用egg-sequelize 插件)
     	--user.js 用户表orm层声明
-		--mydoc.js 版权存证表orm层声明
+        --mydoc.js 版权存证表orm层声明
     --service 服务层目录
     	--user.js 用户信息接口操作	
         --mydoc.js 存证信息接口操作
