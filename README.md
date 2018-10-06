@@ -1,10 +1,31 @@
-版权app后台
+### 一、版权app后台
 
---contract :合约代码
+#### 1.1、contract :合约代码
+
+```JavaScript
+--banquan.sol 智能合约代码
+--abi.js   智能合约部署后的abi数据，用于app调用智能合约时使用
+```
 
 ​	
 
---web : 后台代码
+#### 1.2、 web : 后台代码
+
+```JavaScript
+--app 项目主目录
+	--controller 控制器目录 对应路由文件
+    	--user.js 用户信息接口相关控制器
+        --mydoc.js 版权存证信息接口相关控制器
+    --modle 数据层目录(使用egg-sequelize 插件)
+    	--user.js 用户表orm层声明
+		--mydoc.js 版权存证表orm层声明
+    --service 服务层目录
+    	--user.js 用户信息接口操作	
+		--mydoc.js 存证信息接口操作
+    --router.js 接口路由信息
+--config 配置文件目录
+--package.json 包文件信息
+```
 
 
 
@@ -87,3 +108,35 @@ http://39.106.169.68:8080/api/v1/dev/mydoclist/0xa1c2ba713363d23253f46854b467dde
 ### 三、智能合约
 
 合约地址：0x4D3F0D9a79ee462c29608De5A7f2692613502d70
+
+```javascript
+method:
+newBanquan(address useraddress,string user,string docname,string time,string info,string dochash) returns(uint  banquanID)
+```
+
+### 四、数据库
+
+用户表
+
+user
+
+| address  | varchar | 钱包地址；主键 |
+| -------- | ------- | -------------- |
+| name     | varchar | 姓名           |
+| username | varchar | 用户名         |
+| phone    | varchar | 手机号         |
+| identity | varchar | 身份证         |
+
+版权存证表
+
+mydoc
+
+| id          | int     | 版权id，自增 主键    |
+| ----------- | ------- | -------------------- |
+| address     | varchar | 拥有者钱包地址  外键 |
+| user        | varchar | 声明人               |
+| docname     | varchar | 版权名称             |
+| time        | time    | 声明时间戳           |
+| info        | varchar | 简介                 |
+| hash        | varchar | hash信息             |
+| transaction | varchar | 区块链交易hash       |

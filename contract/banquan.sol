@@ -9,7 +9,7 @@ contract Banquan{
         string time;
         string info;
         string dochash;
-    }
+        }
     uint public numbanquans;
     mapping(uint => BanQuan) public banquans;
     function Banquan(){
